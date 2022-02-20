@@ -32,5 +32,8 @@ He can dosn't have to call anyone, he can just look at the dashboard.
 ### End Result
 - Automated Tableau Dashboard which reports current realtime sales data to support data based decision making
 
-### End 
+## Data Exploration
+
+- The data was extracted from companies data warehouse and received in the form of a SQL database
+- The database contained 5 tables 
   
