@@ -43,12 +43,12 @@ He can dosn't have to call anyone, he can just look at the dashboard.
 ### Creating a Star Schema in Tableau
 
 - Fact Table
--   transactions
+  - transactions
 - Dimention Tables
--   customers
--   date
--   markets
--   products
+  - customers
+  - date
+  - markets
+  - products
 <img width="558" alt="Screen Shot 2022-02-20 at 15 53 33" src="https://user-images.githubusercontent.com/92747557/154863948-81367e80-0983-4dc4-97b5-80643b505aec.png">
 
  
