@@ -36,4 +36,10 @@ He can dosn't have to call anyone, he can just look at the dashboard.
 
 - The data was extracted from companies data warehouse and received in the form of a SQL database
 - The database contained 5 tables 
+- <img width="694" alt="Screen Shot 2022-02-20 at 15 49 53" src="https://user-images.githubusercontent.com/92747557/154863803-bb1c6faa-33d2-4416-b064-2e390532c00b.png">
+
+## Extract-Transform-Load (ETL)
+
+### Creating a Star Schema in Tableau
+
   
