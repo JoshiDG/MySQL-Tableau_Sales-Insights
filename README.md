@@ -43,13 +43,24 @@ He can dosn't have to call anyone, he can just look at the dashboard.
 ### Creating a Star Schema in Tableau
 
 - Fact Table
-  - transactions
+  - `transactions`
 - Dimention Tables
-  - customers
-  - date
-  - markets
-  - products
+  - `customers`
+  - `date`
+  - `markets`
+  - `products`
 <img width="558" alt="Screen Shot 2022-02-20 at 15 53 33" src="https://user-images.githubusercontent.com/92747557/154863948-81367e80-0983-4dc4-97b5-80643b505aec.png">
 
+### Cleaning the Data
+
+1. There are 0 and -ve values in 'Sales Amount' in `transactions` table
+<img width="325" alt="Screen Shot 2022-02-20 at 15 58 47" src="https://user-images.githubusercontent.com/92747557/154864150-7bd6897f-dc47-4cfb-a2b9-a17f24e1ded4.png">
+  Filter: Sales Amount must be at least 1 (Becaues it makes no sense for sales Amount to be 0 or -ve)
+2. Doing a quick anti-join to check that 'New-York' and 'Paris' market_names do exist in `market` table but do not exist in `transaction` table.
+<img width="655" alt="Screen Shot 2022-02-20 at 16 14 16" src="https://user-images.githubusercontent.com/92747557/154864576-565789f5-1780-423c-a4c6-b9f3292e842f.png">
+`
+SELECT markets_code,markets_name
+FROM sales.markets AS m
+WHERE (markets_code) NOT IN (SELECT market_code FROM sales.transactions)
+`
  
-  
